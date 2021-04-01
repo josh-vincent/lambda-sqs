@@ -19,7 +19,7 @@ npm install uuid
     {
       "messageId": "19dd0b57-b21e-4ac1-bd88-01bbb068cb78",
       "receiptHandle": "MessageReceiptHandle",
-      "body": "{\n      \"amount\": \"100000\",\n   \"id\":\"123\"}",
+      "body": "{\n      \"amount\": \"10\",\n   \"updatedTotal\":\"123\",\n   \"timetamp\":\"2020-01-01T10:00:00z\",\n   \"id\":\"123\"}",
       "attributes": {
         "ApproximateReceiveCount": "1",
         "SentTimestamp": "1523232000000",

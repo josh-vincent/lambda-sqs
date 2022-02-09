@@ -10,11 +10,18 @@ Make sure to set messages in sqs to batches of 1 or if a message fails it will f
 ```
 npm install uuid
 ```
+
 ### Example message 
 ```javascript 
+const values = {
+  amount: 10,
+  members: ["user1", "user2"],
+  updatedTotal: 1234,
+  timestamp: new Date.toISOString(),
+};
 
+await sendSQSMessage(values);
 ```
-
 
 ### Send SQS Message 
 ```javascript 

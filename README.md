@@ -10,6 +10,11 @@ Make sure to set messages in sqs to batches of 1 or if a message fails it will f
 ```
 npm install uuid
 ```
+### Example message 
+```javascript 
+
+```
+
 
 ### Send SQS Message 
 ```javascript 

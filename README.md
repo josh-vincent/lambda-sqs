@@ -11,6 +11,18 @@ Make sure to set messages in sqs to batches of 1 or if a message fails it will f
 npm install uuid
 ```
 
+### Send SQS Message 
+```javascript 
+const sendSQSMessage = async (item) => {
+  var params = {
+    MessageBody: JSON.stringify(item),
+    QueueUrl: QUEUE_URL,
+  };
+  console.log(params);
+  return await SQS.sendMessage(params).promise();
+};
+```
+
 ### Test Event
 
 ```json

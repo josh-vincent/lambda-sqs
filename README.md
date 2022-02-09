@@ -4,12 +4,9 @@ Lambda function for writing messages to SQS and also receiving SQS messages as t
 
 ### Prerequisites
 
-Set up SQS QUEUE and give lambda permissions to SQS
-Make sure to set messages in sqs to batches of 1 or if a message fails it will fail all of them
-
-```
-npm install uuid
-```
+- Set up SQS QUEUE and give lambda permissions to SQS
+- Set Env variable in Lambda to be the SQS Queue url
+- Make sure to set messages in sqs to batches of 1 or if a message fails it will fail all of them
 
 ### Example message 
 ```javascript 
